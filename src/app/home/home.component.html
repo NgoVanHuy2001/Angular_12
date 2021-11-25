@@ -1,4 +1,9 @@
 <div class="test">
-    <h3>Chúc các bạn thành công</h3>
-    <p>Học tập thật tốt nha</p>
+    <h3>Học tập thật tốt nha</h3>
+    <h1>Trái cây</h1>
+    <div *ngFor="let trai of traiCay; let i = index">
+        <li>{{i + 1}}.{{trai}} </li>
+
+    </div>
+
 </div>

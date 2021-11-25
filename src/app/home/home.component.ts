@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  public traiCay = ["Táo", "Nho", "Cam", "Quýt", "Mít"];
   constructor() { }
 
   ngOnInit(): void {
+    console.log('trai cay = ', this.traiCay)
   }
 
 }
