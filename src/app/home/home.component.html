@@ -1,9 +1,26 @@
 <div class="test">
     <h3>Học tập thật tốt nha</h3>
     <h1>Trái cây</h1>
-    <div *ngFor="let trai of traiCay; let i = index">
+    <!-- <div *ngFor="let trai of traiCay;  let i = index">
         <li>{{i + 1}}.{{trai}} </li>
-
-    </div>
-
+    </div> -->
+    <br>
+    <table id="table2">
+        <tr>
+            <th>Thứ tự</th>
+            <th>Tên</th>
+            <th>Giá</th>
+            <th>Đại hạ giá</th>
+        </tr>
+        <tr *ngFor="let trai of traiCay2;  let i = index">
+            <td>{{i + 1}}</td>
+            <td class="center">{{trai.ten}}</td>
+            <td class="right">
+                <span [ngClass]="{'sale' : trai.gia < 5 }">{{trai.gia}}</span>
+            </td>
+            <td>
+                <span *ngIf="trai.haGia">Đang hạ giá!</span>
+            </td>
+        </tr>
+    </table>
 </div>

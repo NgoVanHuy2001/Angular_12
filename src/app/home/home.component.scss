@@ -4,3 +4,27 @@
     box-shadow: 5px 10px red;
     width: 500px;
 }
+
+#table2,
+td,
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    width: 100px;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.sale {
+    color: red;
+}
